@@ -63,7 +63,7 @@
    }
    .manual-btn
    {
-       border:2px solid white;
+       /* border:2px solid white; */
        padding: 5px;
        border-radius: 10px;
        cursor: pointer;
@@ -107,7 +107,8 @@
    
    }
    .navigation-auto div{
-       border: 2px solid antiquewhite;
+       /* border: 2px solid antiquewhite; */
+       border:2px solid white;
        padding: 5px;
        border-radius: 10px;
        transition:1s;
