@@ -3,6 +3,10 @@
     padding: 0;
     box-sizing: border-box;
 }
+body,html
+{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
     /* Image Slider styling start here */
 .slider
 {
@@ -369,7 +373,56 @@ nav .menu-btn i
 {
     /* border:2px solid purple; */
     width: 25%;
-    margin-bottom: 6vh;
+    margin-bottom: 4vh;
 }
                              /* *** Page - 2 styling end here *** */
 
+             /* *************** Page - 3 styling start here ****************** */
+#heading-3
+{
+    text-align: center;
+    font-size: 26px;
+    letter-spacing: 1px;
+    font-weight: bolder;
+    margin-bottom: 6vh;
+}
+#projectContainer
+{
+    display: flex;
+    /* border:2px solid blue; */
+    
+}
+.card h3
+{
+    padding: 10px 0px 10px 20px;
+}
+.card p
+{
+    padding: 10px 0px 20px 20px;
+}
+.card button
+{
+    margin-left: 20px;
+   
+    padding:10px;
+    background-color: white;
+    border:none;
+    text-transform: uppercase;
+    /* font-weight: 550; */
+    margin:10px 0px 30px 20px;
+
+}
+.card
+{
+    background: rgb(233, 233, 233);
+    color: rgb(87, 84, 84);
+}
+.card:hover
+{
+    background-color: yellow;
+}
+.card button:hover
+{
+    background-color: #65317D;
+    color:white;
+}
