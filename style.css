@@ -273,7 +273,8 @@ nav .menu-btn i
 {
     width: 115px;
     padding:10px;
-    background-color: yellow;
+    border-radius: 3px;
+    background-color: #FFC107;      /*yellow color*/
     border:none;
     text-transform: uppercase;    
 }
@@ -359,7 +360,8 @@ nav .menu-btn i
 {
     width: 115px;
     padding:10px;
-    background-color: yellow;
+    border-radius: 3px;
+    background-color: #FFC107;
     border:none;
     text-transform: uppercase;
     /* font-weight: 550; */
@@ -405,7 +407,7 @@ nav .menu-btn i
 .card button
 {
     margin-left: 20px;
-   
+    border-radius: 3px;
     padding:10px;
     background-color: white;
     border:none;
@@ -421,7 +423,7 @@ nav .menu-btn i
 }
 .card:hover
 {
-    background-color: yellow;
+    background-color:rgb(255, 221,109);
 }
 .card button:hover
 {
