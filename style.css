@@ -385,7 +385,7 @@ nav .menu-btn i
 #heading-3
 {
     text-align: center;
-    font-size: 26px;
+    font-size: 40px;
     letter-spacing: 1px;
     font-weight: bolder;
     margin-bottom: 6vh;
@@ -431,3 +431,76 @@ nav .menu-btn i
     color:white;
 }
             /* *************** Page - 3 styling end here ****************** */
+
+
+
+ /* ***************************** Page - 4 styling start here *********************************** */
+
+
+#heading-4
+{
+    text-align:center;
+    font-size: 40px;
+    font-weight: 600;
+    margin: 8vh 0 8vh 0;
+}
+#pricingContainer
+{
+    display:flex;
+    
+    margin:0% 20% 8vh 20%;
+}
+.pricing
+{
+    width: 33.33%;
+    text-align: center;
+    border-right:2px solid gray;
+    
+}
+.pricing:last-child
+{
+    border-right: none;
+}
+.pricing h3
+{
+    text-transform: uppercase;
+
+}
+.pricing p
+{
+    font-weight: 500;
+    margin-top:20px;
+}
+.pricing :nth-child(2)
+{
+    color:grey;
+    text-transform: uppercase;
+    font-weight: normal;
+}
+.pricing button
+{
+    width: 80px;
+    padding:10px;
+    border-radius: 3px;
+    background-color: #FFC107;      /*yellow color*/
+    border:none;
+    text-transform: uppercase;
+    margin-top: 20px;
+}
+.pricing button:hover
+{
+    background-color: purple;
+    color:white;
+    cursor:pointer;
+}
+
+                    /* ************************Page -4 end here************************ */
+                    
+
+
+/* *******************************************Page -5 start here**************************************** */
+
+
+
+                    /* ************************Page -5 end here************************ */
+
