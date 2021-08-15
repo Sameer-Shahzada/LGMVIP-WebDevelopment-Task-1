@@ -280,7 +280,7 @@ nav .menu-btn i
 }
 .intro-btns:hover
 {
-    background-color: purple;
+    background-color:#65317D;;
     color:white;
     cursor:pointer;
 }
@@ -379,9 +379,10 @@ nav .menu-btn i
     width: 25%;
     margin-bottom: 4vh;
 }
-                             /* *** Page - 2 styling end here *** */
+                                /* *** Page - 2 styling end here *** */
 
-             /* *************** Page - 3 styling start here ****************** */
+             /* ******************** Page - 3 styling start here ************************ */
+             
 #heading-3
 {
     text-align: center;
@@ -430,11 +431,9 @@ nav .menu-btn i
     background-color: #65317D;
     color:white;
 }
-            /* *************** Page - 3 styling end here ****************** */
+                     /* *************** Page - 3 styling end here ****************** */
 
-
-
- /* ***************************** Page - 4 styling start here *********************************** */
+        /* ***************************** Page - 4 styling start here *********************************** */
 
 
 #heading-4
@@ -489,18 +488,117 @@ nav .menu-btn i
 }
 .pricing button:hover
 {
-    background-color: purple;
+    background-color: #65317D;;
     color:white;
     cursor:pointer;
 }
 
-                    /* ************************Page -4 end here************************ */
+                      /* *****************Page -4 styling end here*************** */
+                
+
+            /***************************Page -5 styling start here********************************* */
+#VprojectContainer
+{
+    /* border:2px solid black; */
+    background-color: #65317D;
+    margin-bottom: 8vh;
+   
+    
+}
+#heading-5
+{
+    text-align:center;
+    font-size: 40px;
+    font-weight: 600;
+    margin: 8vh 0 2vh 0;
+    color:white;
+}
+.videoContainer
+{
+    /* border: 2px solid yellow; */
+    padding: 8vh 0 16vh 0;
+   
+}
+.vframe
+{
+    margin:0 20px;
+}
+
+                            /* ************Page -5 styling end here************* */
                     
+    /* **********************************Page -6 styling start here************************** */
+
+#ZteamContainer
+{
+    margin:0% 15% 8vh 15%;
+    display: flex;
+    flex-wrap: wrap;
+   
+    /* border:1px solid brown; */
+    justify-content: space-around;
+}
+#heading-6
+{
+    /* border:2px solid blue; */
+    text-align:center;
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom:8vh;
+    /* margin: 8vh 0 2vh 0; */
+    
+}
+.Zteam{
+    text-align: center;
+    margin: 0 50px 0 50px;
+   
+    
+}
+
+.Zteam :nth-child(2)
+{
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.Zteam :nth-child(3)
+{
+    color:gray;
+    margin-bottom: 6vh;
+}
+.Zteam img 
+{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+
+}
+                             /* *************Page -6 styling end here*************** */
+                             
+
+     /* ********************************* Page - 7 styling start here ********************************** */
+     
 
 
-/* *******************************************Page -5 start here**************************************** */
 
 
 
-                    /* ************************Page -5 end here************************ */
 
+                              /* *************Page -7 styling end here*************** */
+
+    /* ********************************* Page - 8 styling start here ********************************** */
+                            
+    
+    
+    
+                          /* *************Page -8 styling end here*************** */
+
+    /* ********************************* Page - 9 styling start here ********************************** */
+
+
+
+
+                        /* *************Page - 9 styling end here*************** */
+     /* ********************************* Page - 10 styling start here ********************************** */
+
+
+                            /* *************Page - 10 styling end here*************** */
