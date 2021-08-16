@@ -5,6 +5,7 @@
 }
 body,html
 {
+    overflow-x: hidden;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
     /* Image Slider styling start here */
@@ -576,10 +577,44 @@ nav .menu-btn i
                              
 
      /* ********************************* Page - 7 styling start here ********************************** */
-     
 
+#ZlifeContainer
+{
+    background-color: #E6E3E3;
+    
+}
+#heading-7
+{
+    /* border:2px solid blue; */
+    text-align:center;
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom:8vh;
+}
+#imageSlide
+{
+    margin:0 23% 0 23%;
+    /* border:2px solid tomato; */
+    
+}
+#imageSlide img
+{
+   
+    width: 100%;
+    margin-bottom: 4vh;
+}
+#imageminislider
+{
+    /* border:2px solid tomato; */
+    margin:0 23% 0 23%;
 
-
+}
+#imageminislider img
+{
+    height: 110px;
+    margin-bottom: 10vh;
+    
+}
 
 
 
@@ -587,16 +622,150 @@ nav .menu-btn i
 
     /* ********************************* Page - 8 styling start here ********************************** */
                             
+.bridgeContainer
+{
+    /* width: 100%; */
+    /* border:2px solid purple; */
+    height: 60vh;
+    margin-bottom: 10vh;
+    /* overflow: hidden; */
+    background: url(images/Night-Bridge.jpg) no-repeat;
+    background-size: 100% 100%;
+}
+
+.bridgeContainer p
+{
+    text-align:center;
+    font-size: 40px;
+    font-weight: 600;
+    color:white;
+    margin:8vh 0 6vh 0;
     
+}    
+.newsform
+{
+       /* border:1px solid wheat; */
+    margin: 0 100px 0 0px;
+    text-align: center;
+    position: relative;
+
+}
+.newsform input
+{
+    border-radius: 5px 0 0 5px;
+    padding:12px;
+    width:30%;
+    -webkit-transition: 0.1s;
+    transition: 0.1s;
+    border: none;
+    outline:none;
+    color:cornflowerblue;
+    font-weight: 600;
+}
+.newsform input:focus
+{
+    border:none;
+    box-shadow: 0 0 3pt 2pt cornflowerblue;
+    /* border-radius: 5px 0 0 5px; */
+}    
+#newsSignupbtn
+{
+    background-color: #FFC107;
+    position:absolute;
+    padding: 12px;
     
+    width:10%;
+    text-transform: uppercase;
+    border-radius:0px 5px 5px 0;
+
+    -webkit-transition: 0.1s;
+    transition: 0.1s;
+    border: none;
+    outline:none;
+    font-weight: 500;
+    
+}
+#newsSignupbtn:focus
+{
+    border:none;
+    box-shadow: 0 0 3pt 2pt darkgoldenrod;
+
+}
+#newsSignupbtn:hover
+{
+    background-color: #65317D;
+    color:white;
+}
+
     
                           /* *************Page -8 styling end here*************** */
 
     /* ********************************* Page - 9 styling start here ********************************** */
 
+#heading-9
+{
+    text-align:center;
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom:8vh;
+}
+#BlogContainer
+{
+    margin: 0 15% 10vh 15%;
+    border:2px solid saddlebrown;
+    display: flex;
+    justify-content: space-around;
+}
+.BlogMini
+{
 
-
-
+    width: 33%;
+    margin:0px 20px ;
+    overflow: hidden;
+    text-align: center;
+}
+.BlogMini img
+{
+    height: 200px;
+    width: 290px;
+}
+.BlogMini :nth-child(2)
+{
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 22px;
+    
+    margin-top: 3vh;
+}
+.BlogMini :nth-child(3)
+{
+   
+    margin: 2vh 0;
+    color: gray;
+    font-size: 17px;
+}
+.BlogMini :nth-child(4)
+{
+    
+    margin-bottom: 5vh;
+}
+.BlogMini :nth-child(5)
+{
+    
+    width: 110px;
+    padding:10px;
+    border-radius: 3px;
+    background-color: #E6E3E3;      /*lightgray color*/
+    border:none;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: 6vh;
+}
+.BlogMini :nth-child(5):hover
+{
+    background-color: #FFC107;
+    cursor:pointer;
+}
                         /* *************Page - 9 styling end here*************** */
      /* ********************************* Page - 10 styling start here ********************************** */
 
