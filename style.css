@@ -768,6 +768,151 @@ nav .menu-btn i
 }
                         /* *************Page - 9 styling end here*************** */
      /* ********************************* Page - 10 styling start here ********************************** */
+#p10Container
+{
+    
+    /* border:2px solid purple; */
+    display: flex;
+    margin-bottom: 10vh;
+}
+.Map
+{
+    
+    
+}
+.cont-form
+{
+    background-color: #FFDD6D;
+   
+}
+.Map, .cont-form
+{
+    /* border:2px solid blue; */
+    width: 50%;
+}
+.cont-form :first-child
+{
+    margin:10vh 0 5vh 60px;
+    font-size: 40px;
+    font-weight: 600;
+    
+}
+.cont-form label
+{
+    text-transform: uppercase;
+    font-size: 17px;
+    font-weight: 450;
+}
+.cont-form label,input,textarea
+{
+    margin-left: 60px;
+}
+.cont-form input 
+{
+    margin:1.5vh 0 3vh 60px;
+    border-radius:5px;
+    width: 50%;
+    padding: 8px;
+    -webkit-transition: 0.1s;
+    transition: 0.1s;
+    border: none;
+    outline:none;
+    color:gray;
+}
+.cont-form input:focus
+{
+    border:none;
+    box-shadow: 0 0 2.5pt 3pt gray;
+}
+
+.cont-form textarea
+{
+    -webkit-transition: 0.1s;
+    transition: 0.1s;
+    border: none;
+    outline:none;
+    color:gray;
+    width: 50%;
+    border-radius: 5px;
+    margin:1.5vh 0 3vh 60px;
+}
+.cont-form textarea:focus
+{
+    border:none;
+    box-shadow: 0 0 2.5pt 3pt gray;
+}
+.cont-form button
+{
+    -webkit-transition: 0.1s;
+    transition: 0.1s;
+    border: none;
+    outline:none;
+    width: 50%;
+    padding:10px;
+    border-radius: 5px;
+    background-color: #65317D;      /*purple color*/
+    color:white;
+    border:none;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin:3vh 0 6vh 60px;
+    
+}
+.cont-form button:focus
+{
+    border:none;
+    box-shadow: 0 0 2.5pt 3pt gray;
+}
+.cont-form button:hover
+{
+    color:black;
+}
 
 
                             /* *************Page - 10 styling end here*************** */
+#footer-section
+{
+    display: flex;
+    margin: 0 15% 10vh 15%;
+    border:2px solid black;
+    justify-content: space-around;
+}
+.f-sections
+{
+    width: 33%;
+    text-align: center;
+    
+}
+.f-sections h5
+{
+    font-size:20px;
+    font-weight: 600;
+    margin-bottom: 2vh;
+}
+.f-sections p
+{
+    margin-bottom:1vh;
+}
+
+span .social {
+    font-size: 25px;
+    padding: 6px 8px;
+}
+
+
+
+
+.claim
+{
+    padding: 20px;
+    text-align: center;
+}
+.claim:hover
+{
+    background-color: black;
+    color: #fff;
+}
+.claim:hover .Shahzada
+{
+    color:cyan;
+}
