@@ -422,12 +422,6 @@ nav .menu-btn i
     text-decoration: none; 
 }
 
-.descContainer button:hover
-{
-    color:white;
-    background-color: #65317D; /*purple color */
-    cursor: pointer;
-}
 .descContainer
 {
     /* border:2px solid purple; */
@@ -471,37 +465,60 @@ nav .menu-btn i
 }
 .card h3
 {
-    padding: 10px 0px 10px 20px;
+    font-size:25px;
+    padding:20px 0 0px 0;
+    text-align: center;
+    text-transform: uppercase;
 }
 .card p
 {
-    padding: 10px 0px 20px 20px;
+    padding: 10px 0px 30px 65px;
 }
-.card button
-{
-    margin-left: 20px;
-    border-radius: 3px;
-    padding:10px;
-    background-color: white;
-    border:none;
-    text-transform: uppercase;
-    /* font-weight: 550; */
-    margin:10px 0px 30px 20px;
 
-}
 .card
 {
     background: rgb(233, 233, 233);
     color: rgb(87, 84, 84);
+    line-height: 1.5em;
+    padding-bottom:30px;
+    
+}
+#card-2,#card-4
+{
+    background-color: rgba(238, 235, 232, 0.808);
 }
 .card:hover
 {
     background-color:rgb(255, 221,109);
 }
-.card button:hover
+#card-2:hover, #card-4:hover
 {
-    background-color: #65317D;
+    background-color:rgb(255, 221,109);
+}
+
+.card-btn
+{
+    padding: 7px 10px;
+    color:black;
+    border-radius: 3px;
+    background-color: #FFC107;      /*yellow color*/
+    text-transform: uppercase; 
+}
+.card-btn:focus
+{
+    border:none;
+    box-shadow: 0 0 2.5pt 3pt goldenrod;
+}
+.card-btn:hover
+{
+    background-color:#65317D;
     color:white;
+    
+}
+.card a 
+{
+    text-decoration: none;
+    margin:10px 0px 30px 65px;
 }
 /* Media query for page -3 */
 @media screen and (max-width:960px) {
@@ -509,6 +526,8 @@ nav .menu-btn i
     {
         flex-direction: column;
     }
+    
+  
 }
                      /* *************** Page - 3 styling end here ****************** */
 
