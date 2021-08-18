@@ -629,6 +629,7 @@ nav .menu-btn i
     .pricing
     {
         border-right: none;
+        width: 70%;
     }
     .pricing p
     {
@@ -686,6 +687,20 @@ nav .menu-btn i
     height: 100%;
 }
 
+@media  (max-width:576px)
+ {
+    .carousel-cell 
+    {
+        width: 90%;
+        height: 300px;
+    }
+    .flickity-slider
+    {
+        width: 90%;
+    }
+    
+}
+
                             /* ************Page -5 styling end here************* */
                     
     /* **********************************Page -6 styling start here************************** */
@@ -739,43 +754,98 @@ nav .menu-btn i
 
      /* ********************************* Page - 7 styling start here ********************************** */
 
-#ZlifeContainer
-{
-    background-color: #E6E3E3;
-    
+/* LIFE IN ZIPPY style  */
+
+.life-section {
+    margin-top: 50px;
+    background-color: rgb(230, 227, 227);
+    padding-top: 60px;
+    padding-bottom: 100px;
 }
-#heading-7
-{
-    /* border:2px solid blue; */
-    text-align:center;
+
+#life h1 {
+    padding-bottom: 30px;
     font-size: 40px;
     font-weight: 600;
-    margin-bottom:8vh;
+    text-align: center;
 }
-#imageSlide
-{
-    margin:0 23% 0 23%;
-    /* border:2px solid tomato; */
-    
-}
-#imageSlide img
-{
-   
-    width: 100%;
-    margin-bottom: 4vh;
-}
-#imageminislider
-{
-    /* border:2px solid tomato; */
-    margin:0 23% 0 23%;
 
+.resp-life {
+    max-width: 720px;
+    display: block;
+    margin: auto;
 }
-#imageminislider img
-{
-    height: 110px;
-    margin-bottom: 10vh;
-    
+
+.show-top {
+    cursor: pointer;
+    width: 100%;
+    height: 30rem !important;
+    padding: 20px 10px;
 }
+
+.img-slides {
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+#move {
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+}
+
+#move::-webkit-scrollbar {
+    display: none;
+}
+
+.pictures {
+    cursor: pointer;
+    width: 120px;
+    height: 100px;
+    opacity: 0.8;
+    margin: 5px;
+}
+
+.pictures:hover {
+    opacity: 1;
+}
+
+.arrow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 00%;
+    height: 100px;
+    padding: 0 10px;
+    font-size: 26px;
+    background-color: black;
+    color: white;
+}
+
+.arrow:hover {
+    background-color: #65317D;
+}
+
+@media (max-width: 715px) {
+    /* TEAM  */
+    .resp-life{
+        max-width: 650px !important;
+    }
+}
+
+@media (max-width: 576px){
+    #life .show-top{
+        height: 20rem !important;
+    }
+}
+
+/* LIFE IN ZIPPY style ends here  */
 
 
 
@@ -787,7 +857,7 @@ nav .menu-btn i
 {
     /* width: 100%; */
     /* border:2px solid purple; */
-    height: 60vh;
+    height: 55vh;
     margin-bottom: 10vh;
     /* overflow: hidden; */
     background: url(images/Night-Bridge.jpg) no-repeat;
@@ -800,7 +870,8 @@ nav .menu-btn i
     font-size: 40px;
     font-weight: 600;
     color:white;
-    margin:8vh 0 6vh 0;
+    margin:10vh 0 6vh 0;
+    padding:10vh 0 5vh 0;
     
 }    
 .newsform
@@ -815,7 +886,7 @@ nav .menu-btn i
 {
     border-radius: 5px 0 0 5px;
     padding:12px;
-    width:30%;
+    width:33.33%;
     -webkit-transition: 0.1s;
     transition: 0.1s;
     border: none;
@@ -857,6 +928,25 @@ nav .menu-btn i
     background-color: #65317D;
     color:white;
 }
+@media (max-width: 880px) 
+{
+    #newsletter .newsform {
+        width: 80%;
+        border-radius: 4px;
+    }
+    #newsletter button {
+        width: 100px;
+        border-radius: 4px;
+        margin: 60px 0px 10px -200px;
+    }
+    .newsform input
+    {
+        width: 300px;
+        border-radius:5px;
+
+    }
+}
+
 
     
                           /* *************Page -8 styling end here*************** */
@@ -881,7 +971,7 @@ nav .menu-btn i
 {
 
     width: 33%;
-    margin:0px 20px ;
+    margin:0px 20px;
     overflow: hidden;
     text-align: center;
 }
@@ -927,6 +1017,21 @@ nav .menu-btn i
     background-color: #FFC107;
     cursor:pointer;
 }
+
+@media screen and (max-width:880px){
+   #BlogContainer
+    {
+        flex-direction: column;
+        align-items: center;
+
+       
+    }
+    .BlogMini 
+    {
+        width: 70%;
+       
+    }
+}
                         /* *************Page - 9 styling end here*************** */
      /* ********************************* Page - 10 styling start here ********************************** */
 #p10Container
@@ -936,11 +1041,7 @@ nav .menu-btn i
     display: flex;
     margin-bottom: 10vh;
 }
-.Map
-{
-    
-    
-}
+
 .cont-form
 {
     background-color: #FFDD6D;
@@ -1029,6 +1130,25 @@ nav .menu-btn i
     color:black;
 }
 
+@media screen and (max-width:890px) {
+    #p10Container
+    {
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    .Map, .cont-form
+    {
+        width: 100%;
+    }
+    .Map{
+        height:100vh;
+    }
+    .cont-form input,.cont-form textarea,.cont-form button
+    {
+        width: 70%;
+    }
+}
 
                             /* *************Page - 10 styling end here*************** */
 #footer-section
@@ -1060,7 +1180,19 @@ span .social {
     font-size: 25px;
     padding: 6px 8px;
 }
-
+@media screen and (max-width:890px) {
+    #footer-section
+    {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+    .f-sections
+    {
+        padding: 15px 5px;
+        width: 60%;
+    }
+}
 
 
 
