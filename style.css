@@ -369,7 +369,7 @@ nav .menu-btn i
 }
 #SVG-parentContainer
 {
-    border:2px solid orange;
+    /* border:2px solid orange; */
     display: flex;
     /* justify-content: space-around; */
     margin:0% 20% 0% 20%;
@@ -377,7 +377,7 @@ nav .menu-btn i
 }
 .bellparent,.msgparent,.drawerparent
 {
-    border:2px solid palevioletred;
+    /* border:2px solid palevioletred; */
     text-align: center;
     padding: 15px 10px;    
 }
@@ -704,33 +704,105 @@ nav .menu-btn i
                             /* ************Page -5 styling end here************* */
                     
     /* **********************************Page -6 styling start here************************** */
-
-#ZteamContainer
-{
-    margin:0% 15% 8vh 15%;
-    display: flex;
-    flex-wrap: wrap;
-   
-    /* border:1px solid brown; */
-    justify-content: space-around;
-}
 #heading-6
-{
-    /* border:2px solid blue; */
-    text-align:center;
-    font-size: 40px;
-    font-weight: 600;
-    margin-bottom:8vh;
-    /* margin: 8vh 0 2vh 0; */
+    {
+        /* border:2px solid blue; */
+        text-align:center;
+        font-size: 40px;
+        font-weight: 600;
+        margin:8vh 0;
+        
+        
+    }
+    #ZteamContainer
+    {
+        margin:0% 15% 0 15%;
+        /* border:5px solid black; */
+        
+        /* padding: 5px; */
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        
+    }
+    .zteamParent
+    {
+        
+        /* border:2px solid red; */
+        padding: 10px;
+        margin: 0 30px 0 30px;
+        
+       
     
-}
-.Zteam{
-    text-align: center;
-    margin: 0 50px 0 50px;
-   
+        
+    }
+    .zteam 
+    {
+        
+        background-color: #5e0769;
+        border-radius: 100%;
+        max-height: 150px;
+        max-width: 150px;
+        margin: 0 auto;
+        text-align: center;
+        
+    }
+    .social-adjust {
+        
+        display: block;
+        margin: auto;
+        padding-left: 5px;
+    }
+    .social-handles {
+        height: 25px;
+        padding: 2%;
+        width: auto;
+        position: relative;
+        top: 60px;
+        cursor: pointer;
+    }
+    .img-circle {
+        border-radius: 100%;
+        max-height: 150px;
+        max-width: 150px;
+        margin: auto;
+        position: relative;
+        top: -29px;
+    }
+    .img-circle:hover {
+        opacity: 0.4;
+    }
     
-}
+    .zteam:hover .social-handles {
+        display: inline;
+        z-index: 100;
+    }
+    .zteamParent h4 ,p
+    {
+        text-align: center;
+    
+    }
+  /*  Media query  */
+     @media  screen and (max-width:700px) {
+        #ZteamContainer
+        {
+            flex-direction:column;
+        }
+        
+    }
 
+.zteamParent h4
+{
+    text-transform: uppercase;
+    font-weight: 600;
+    margin:10px 0;
+}
+.zteamParent p 
+{
+    color:gray;
+    margin-bottom: 3vh;
+}
+/* 
 .Zteam :nth-child(2)
 {
     text-transform: uppercase;
@@ -741,14 +813,8 @@ nav .menu-btn i
 {
     color:gray;
     margin-bottom: 6vh;
-}
-.Zteam img 
-{
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
+} */
 
-}
                              /* *************Page -6 styling end here*************** */
                              
 
@@ -963,7 +1029,7 @@ nav .menu-btn i
 #BlogContainer
 {
     margin: 0 15% 10vh 15%;
-    border:2px solid saddlebrown;
+    /* border:2px solid saddlebrown; */
     display: flex;
     justify-content: space-around;
 }
@@ -1155,7 +1221,7 @@ nav .menu-btn i
 {
     display: flex;
     margin: 0 15% 10vh 15%;
-    border:2px solid black;
+    /* border:2px solid black; */
     justify-content: space-around;
 }
 .f-sections
@@ -1179,6 +1245,10 @@ span .social {
     color: blue;
     font-size: 25px;
     padding: 6px 8px;
+}
+span .social:hover
+{
+    color:darkblue;
 }
 @media screen and (max-width:890px) {
     #footer-section
@@ -1214,4 +1284,88 @@ span .social {
 /* **************************************************** */
 
 
+/* TEAM SECTION style  */
 
+/* .team-section {
+    margin-top: 50px !important;
+}
+
+.members {
+    margin-top: 60px;
+}
+
+.img-social {
+    background-color: #5e0769;
+    border-radius: 100%;
+    max-height: 150px;
+    max-width: 150px;
+    margin: 0 auto;
+}
+
+.img-circle {
+    border-radius: 100%;
+    max-height: 150px;
+    max-width: 150px;
+    margin: auto;
+    position: relative;
+    top: -27px;
+}
+
+.img-circle:hover {
+    opacity: 0.4;
+}
+
+.social-handles {
+    height: 25px;
+    padding: 2%;
+    width: auto;
+    position: relative;
+    top: 60px;
+    cursor: pointer;
+}
+
+.img-social:hover .social-handles {
+    display: inline;
+    z-index: 100;
+}
+
+.social-adjust {
+    display: block;
+    margin: auto;
+    /* padding-left: 30px; */
+/* } */
+
+/* .card {
+    border: none;
+}
+
+.team-section .row {
+    padding-bottom: 30px;
+} */ 
+
+/* TEAM SECTION style end here  */
+/* 
+
+
+#ZteamContainer
+{
+    border:2px solid purple;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  
+}
+.zteam
+{
+    border:2px solid red;
+    background-color: #5e0769;
+    border-radius: 100%;
+    max-height: 150px;
+    max-width: 150px;
+    margin: 0 auto;
+} */
+/* .card-body
+{
+    border:2px solid blue;
+    /* margin:0 auto; */
+/* } */ 
