@@ -1,18 +1,19 @@
 
 // script for image slider
-// var counter =1;
-// setInterval(function(){
-//     document.getElementById('radio'+ counter).checked = true;
-//     counter++;
-//     if(counter>4){
-//         counter =1;
-//     }
-// },5000);
+var counter =1;
+setInterval(function(){
+    document.getElementById('radio'+ counter).checked = true;
+    counter++;
+    if(counter>4){
+        counter =1;
+    }
+},5000);
 
 
 // When the user scrolls down 20px from the top of the document, slide down the navbar
 // When the user scrolls to the top of the page, slide up the navbar (50px out of the top view)
 // window.onscroll = function() {scrollFunction()};
+
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {

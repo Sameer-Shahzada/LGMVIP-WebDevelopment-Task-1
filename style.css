@@ -6,7 +6,7 @@
 body,html
 {
     scroll-behavior: smooth;
-    /* overflow-x: hidden; */
+    overflow-x: hidden;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
     /* Image Slider styling start here */
@@ -139,15 +139,10 @@ body,html
 #navbar
 {
     overflow: hidden;
-    position: fixed; /* Make it stick/fixed */
-    width: 100%; /* Full width */
+    position: fixed;    /* Make it stick/fixed */
+    width: 100%;        /* Full width */
     transition: top 0.1s; /* Transition effect when sliding down (and up) */
 }
-   
-#navbar a:hover {
-    background-color: #ddd;
-    color: black;
-  }
 .brandName
 {
     font-size: 25px;
@@ -184,6 +179,10 @@ nav
     padding: 6px 8px;
     border-radius: 5px;
     transition:font-size 0.3s ease;  
+}
+.navLinks a:hover {
+    background-color: #ddd;
+    color: black;
 }
 
 nav .menu-btn i 
@@ -235,11 +234,12 @@ nav .menu-btn i
     }
     .brandName
     {
-        margin-left: -35px;
+        margin-left: 0px;
     }
     nav .menu-btn i 
     {
         display: block;
+        margin-left:290px;
     }
     #click:checked ~ .menu-btn i::before{
         content:"\f00d";
@@ -255,12 +255,9 @@ nav .menu-btn i
 {
     display: flex;
     flex-direction: column;
-   /* border:2px dashed blue; */
-   margin-left:216px;
-   margin-top: 15%;
-   
-   /* width: 100%; */
-   
+    
+    margin-left:216px;
+    margin-top: 15%;   
 }
 #intro-content p:first-child
 {
@@ -268,6 +265,7 @@ nav .menu-btn i
     word-spacing:10px;
     color:white;
     font-weight: bold;
+    text-align: left;
 }
 #intro-content p:last-child
 {
@@ -275,6 +273,7 @@ nav .menu-btn i
     color:white;
     word-spacing:3px;
     margin-top:20px;
+    text-align-last: left;
 
 }
     /* Intro buttons start here */
@@ -316,17 +315,26 @@ nav .menu-btn i
 #intro-content
     {
         
-    margin:35% 100px 10% 100px;
-
+    margin:45% 100px 10% 95px;
+    width: 80%;
+    }
+    #intro-content p:first-child
+    {
+        font-size: 1.5rem;
+    }
+    #intro-content p:last-child
+    {
+        font-size: 0.85rem;
     }
     #intro-btns
     {
-        margin-left: 100px;
-        /* margin-top: 30px; */    
+        margin-left: 95px;
+
     }
     
 }
 /* Inro-content media query end here */
+
 /* Intro buttons end here */
 
 /******************************* Website Introduction section end here ********************************/
@@ -334,11 +342,10 @@ nav .menu-btn i
                                     /* *** Page - 2 styling start here *** */
 .heading-2
 {
-    /* border:2px solid blue; */
-    margin-top:8vh;
+    margin-top:4vh;
     text-align: center;
     font-weight: bolder;
-    font-size: 28px;
+    font-size: 2rem;
     word-spacing: 5px;
 }
 #Page2-Intro
@@ -346,14 +353,13 @@ nav .menu-btn i
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 8vh;
-    /* border:2px solid black; */
+    margin-top: 4vh;
     font-size: 20px;
     margin:0% 20% 0% 20%;
 }
 .intro-para
 {
-    /* border:2px solid blue; */
+   
     padding: 10px 25px;
     color:gray
 }
@@ -369,11 +375,10 @@ nav .menu-btn i
 }
 #SVG-parentContainer
 {
-    /* border:2px solid orange; */
+    border-bottom:2px solid gray;
     display: flex;
-    /* justify-content: space-around; */
-    margin:0% 20% 0% 20%;
-    padding: 10px 0px;
+    margin:0% 20% 4vh 20%;
+    padding: 10px 5px;
 }
 .bellparent,.msgparent,.drawerparent
 {
@@ -433,11 +438,14 @@ nav .menu-btn i
 @media screen and (max-width:960px){
     #Page2-Intro{
         flex-direction: column;
+        
+        
     }
     #umbrella-icon
     {
         height: 150px;
         width: 150px;  
+        margin-bottom:4vh;
     }
     #SVG-parentContainer
     {
@@ -472,7 +480,8 @@ nav .menu-btn i
 }
 .card p
 {
-    padding: 10px 0px 30px 65px;
+    padding: 10px 15px 30px 15px;
+    text-align: center;
 }
 
 .card
@@ -481,6 +490,7 @@ nav .menu-btn i
     color: rgb(87, 84, 84);
     line-height: 1.5em;
     padding-bottom:30px;
+    
     
 }
 #card-2,#card-4
@@ -525,8 +535,12 @@ nav .menu-btn i
     #projectContainer
     {
         flex-direction: column;
+        padding: 10px 15px;
     }
-    
+    .card{
+        margin-bottom:20px;
+        box-shadow: 7px 4px 8px rgb(80, 79, 79);
+    }
   
 }
                      /* *************** Page - 3 styling end here ****************** */
@@ -539,12 +553,11 @@ nav .menu-btn i
     text-align:center;
     font-size: 40px;
     font-weight: 600;
-    margin: 8vh 0 8vh 0;
+    margin: 4vh 0 4vh 0;
 }
 #pricingContainer
 {
     display:flex;
-    
     margin:0% 20% 8vh 20%;
 }
 .pricing
@@ -623,7 +636,6 @@ nav .menu-btn i
     #pricingContainer
     {
         flex-direction: column;
-        
         align-items: center;
     }
     .pricing
@@ -644,7 +656,7 @@ nav .menu-btn i
             /***************************Page -5 styling start here********************************* */
 .video-projects 
 {
-    margin-top: 70px;
+    margin-top: 8vh;
     background-color: #65317D;;
     color: #fff;
     padding-top: 50px;
@@ -653,14 +665,14 @@ nav .menu-btn i
             
 .video-projects h1 
 {
-   padding-bottom: 20px;
+   padding-bottom: 15px;
    text-align: center;
-   font-size: 35px;
+   font-size: 40px;
+   font-weight: 600;
 }
             
 .carousel-video 
-{
-                
+{         
     margin-top: 30px;
     margin-bottom: 50px;
 }
@@ -711,15 +723,11 @@ nav .menu-btn i
         font-size: 40px;
         font-weight: 600;
         margin:8vh 0;
-        
-        
     }
     #ZteamContainer
     {
         margin:0% 15% 0 15%;
         /* border:5px solid black; */
-        
-        /* padding: 5px; */
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
@@ -727,14 +735,9 @@ nav .menu-btn i
     }
     .zteamParent
     {
-        
         /* border:2px solid red; */
         padding: 10px;
-        margin: 0 30px 0 30px;
-        
-       
-    
-        
+        margin: 0 30px 0 30px;   
     }
     .zteam 
     {
@@ -802,18 +805,7 @@ nav .menu-btn i
     color:gray;
     margin-bottom: 3vh;
 }
-/* 
-.Zteam :nth-child(2)
-{
-    text-transform: uppercase;
-    font-weight: 600;
-    margin-bottom: 10px;
-}
-.Zteam :nth-child(3)
-{
-    color:gray;
-    margin-bottom: 6vh;
-} */
+
 
                              /* *************Page -6 styling end here*************** */
                              
@@ -823,10 +815,10 @@ nav .menu-btn i
 /* LIFE IN ZIPPY style  */
 
 .life-section {
-    margin-top: 50px;
+    margin-top:8vh;
     background-color: rgb(230, 227, 227);
-    padding-top: 60px;
-    padding-bottom: 100px;
+    padding-top: 6vh;
+    padding-bottom: 10vh;
 }
 
 #life h1 {
@@ -921,8 +913,6 @@ nav .menu-btn i
                             
 .bridgeContainer
 {
-    /* width: 100%; */
-    /* border:2px solid purple; */
     height: 55vh;
     margin-bottom: 10vh;
     /* overflow: hidden; */
@@ -971,11 +961,9 @@ nav .menu-btn i
     background-color: #FFC107;
     position:absolute;
     padding: 12px;
-    
     width:10%;
     text-transform: uppercase;
     border-radius:0px 5px 5px 0;
-
     -webkit-transition: 0.1s;
     transition: 0.1s;
     border: none;
@@ -1012,8 +1000,6 @@ nav .menu-btn i
 
     }
 }
-
-
     
                           /* *************Page -8 styling end here*************** */
 
@@ -1035,11 +1021,11 @@ nav .menu-btn i
 }
 .BlogMini
 {
-
     width: 33%;
     margin:0px 20px;
     overflow: hidden;
     text-align: center;
+    padding-bottom: 8vh;
 }
 .BlogMini img
 {
@@ -1051,7 +1037,6 @@ nav .menu-btn i
     text-transform: uppercase;
     font-weight: 600;
     font-size: 22px;
-    
     margin-top: 3vh;
 }
 .BlogMini :nth-child(3)
@@ -1066,6 +1051,12 @@ nav .menu-btn i
     
     margin-bottom: 5vh;
 }
+.BlogMini a
+{
+    text-decoration: none;
+    color:black;
+    
+}
 .BlogMini :nth-child(5)
 {
     
@@ -1076,14 +1067,18 @@ nav .menu-btn i
     border:none;
     text-transform: uppercase;
     font-weight: 600;
-    margin-bottom: 6vh;
+   
 }
 .BlogMini :nth-child(5):hover
 {
     background-color: #FFC107;
     cursor:pointer;
 }
-
+.BlogMini :nth-child(5):focus
+{
+    border:none;
+    box-shadow: 0 0 3pt 2.5pt rgb(75, 74, 74);
+}
 @media screen and (max-width:880px){
    #BlogContainer
     {
@@ -1105,7 +1100,7 @@ nav .menu-btn i
     
     /* border:2px solid purple; */
     display: flex;
-    margin-bottom: 10vh;
+    margin-bottom: 8vh;
 }
 
 .cont-form
@@ -1216,11 +1211,13 @@ nav .menu-btn i
     }
 }
 
-                            /* *************Page - 10 styling end here*************** */
+            /* *************Page - 10 styling end here*************** */
+
+                          /* Footer section start here */
 #footer-section
 {
     display: flex;
-    margin: 0 15% 10vh 15%;
+    margin: 0 15% 6vh 15%;
     /* border:2px solid black; */
     justify-content: space-around;
 }
@@ -1264,8 +1261,6 @@ span .social:hover
     }
 }
 
-
-
 .claim
 {
     padding: 20px;
@@ -1281,91 +1276,4 @@ span .social:hover
     color:cyan;
 }
 
-/* **************************************************** */
-
-
-/* TEAM SECTION style  */
-
-/* .team-section {
-    margin-top: 50px !important;
-}
-
-.members {
-    margin-top: 60px;
-}
-
-.img-social {
-    background-color: #5e0769;
-    border-radius: 100%;
-    max-height: 150px;
-    max-width: 150px;
-    margin: 0 auto;
-}
-
-.img-circle {
-    border-radius: 100%;
-    max-height: 150px;
-    max-width: 150px;
-    margin: auto;
-    position: relative;
-    top: -27px;
-}
-
-.img-circle:hover {
-    opacity: 0.4;
-}
-
-.social-handles {
-    height: 25px;
-    padding: 2%;
-    width: auto;
-    position: relative;
-    top: 60px;
-    cursor: pointer;
-}
-
-.img-social:hover .social-handles {
-    display: inline;
-    z-index: 100;
-}
-
-.social-adjust {
-    display: block;
-    margin: auto;
-    /* padding-left: 30px; */
-/* } */
-
-/* .card {
-    border: none;
-}
-
-.team-section .row {
-    padding-bottom: 30px;
-} */ 
-
-/* TEAM SECTION style end here  */
-/* 
-
-
-#ZteamContainer
-{
-    border:2px solid purple;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-  
-}
-.zteam
-{
-    border:2px solid red;
-    background-color: #5e0769;
-    border-radius: 100%;
-    max-height: 150px;
-    max-width: 150px;
-    margin: 0 auto;
-} */
-/* .card-body
-{
-    border:2px solid blue;
-    /* margin:0 auto; */
-/* } */ 
+/* **********************THE END****************************** */
