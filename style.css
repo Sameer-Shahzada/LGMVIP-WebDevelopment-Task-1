@@ -6,22 +6,27 @@
 body,html
 {
     scroll-behavior: smooth;
+    width: 100%;
     overflow-x: hidden;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
+
     /* Image Slider styling start here */
+
 .slider
 {
    
     width: 100%;
     height: 100vh;
     overflow: hidden;
+    /* overflow-x: hidden; */
 }
 .slides
 {
     display: flex;
     width: 500%;
     height: 100vh;
+    overflow-x: hidden;
     
 }
 .slides input
@@ -32,6 +37,8 @@ body,html
 {
     width: 20%;
     transition: 2s;
+    overflow-x: hidden;
+    /* border:2px dashed purple; */
 }
     /* Add slide background  */
 #slide1
@@ -56,11 +63,14 @@ body,html
    /* style for manual slide navigation */
    .navigation-manual
    {
+
        position: absolute;
-       width: 575px;
+       /* width: 575px; */
        margin-top: -40px;
+       
        display: flex;
        justify-content: center;
+       overflow-x: hidden;
    }
    .manual-btn
    {
@@ -69,6 +79,7 @@ body,html
        border-radius: 10px;
        cursor: pointer;
        transition:1s;
+       overflow-x: hidden;
    }
    .manual-btn:not(:last-child)
    {
@@ -99,14 +110,14 @@ body,html
    {
        position: absolute;
        display: flex;
-       width: 575px;
+       /* width: 575px; */
        justify-content: center;
        margin-top: 537px;
    
    }
    .navigation-auto div
    {
-       border:2px solid white;
+       /* border:2px solid white; */
        padding: 5px;
        border-radius: 10px;
        transition:1s;
@@ -138,7 +149,7 @@ body,html
 
 #navbar
 {
-    overflow: hidden;
+    overflow-x: hidden;
     position: fixed;    /* Make it stick/fixed */
     width: 100%;        /* Full width */
     transition: top 0.1s; /* Transition effect when sliding down (and up) */
@@ -148,6 +159,7 @@ body,html
     font-size: 25px;
     font-weight: bolder;    
     margin-left: 200px;  
+    
 }
 .brandName a 
 {
@@ -161,12 +173,14 @@ nav
     width: 100%;
     align-items: center;         /* To set vertically center */
     min-height: 12vh;
+    overflow-x: hidden;
 }
 .navLinks
 {
    display: flex;
    list-style-type: none;
    margin-right: 180px;  
+   
 }
 .navLinks a 
 {
@@ -178,7 +192,8 @@ nav
     margin-right: 30px;
     padding: 6px 8px;
     border-radius: 5px;
-    transition:font-size 0.3s ease;  
+    transition:font-size 0.3s ease;
+    
 }
 .navLinks a:hover {
     background-color: #ddd;
@@ -187,10 +202,18 @@ nav
 
 nav .menu-btn i 
 {
+    
     color:#fff;
     font-size: 22px;
     cursor: pointer;
     display: none;
+    
+}
+nav .menu-btn i:hover
+{
+    border:2.5px solid black;
+    padding: 5px;
+    border-radius: 4px;
 }
 #click
 {
@@ -198,20 +221,25 @@ nav .menu-btn i
 }
     /************* Media query for making responsive navbar *********************/
 
-@media (max-width:940px)
+@media (min-width:400px) and (max-width:940px)
 {
-
+    #navbar
+    {
+        overflow-x: hidden;
+    }
      .navLinks
     {
+        
         position: fixed;
-        top: 68px;
+        top: 52px;
         left:-100%; 
         background:#111;
-        height:55vh;
+        height:70vh;
         width: 100%;
         display: block;
         text-align: center;
-        transition: all 0.3s ease; 
+        transition: all 0.3s ease;
+        overflow-x: hidden; 
     }
 
     .navLinks a:hover,.navLinks a.active
@@ -225,7 +253,7 @@ nav .menu-btn i
     }
     .navLinks li 
     {
-        margin:15px 0;
+        margin:15px 0px;
     }
     .navLinks a 
     {
@@ -234,15 +262,22 @@ nav .menu-btn i
     }
     .brandName
     {
-        margin-left: 0px;
+        margin-left: -90px;
+        overflow-x: hidden; 
+        /* max-width: 100vw; */
+        
     }
     nav .menu-btn i 
     {
         display: block;
-        margin-left:290px;
+  
     }
     #click:checked ~ .menu-btn i::before{
         content:"\f00d";
+    }
+    .slide
+    {
+        overflow-x: hidden;
     }
 }
 
@@ -255,9 +290,9 @@ nav .menu-btn i
 {
     display: flex;
     flex-direction: column;
-    
     margin-left:216px;
-    margin-top: 15%;   
+    margin-top: 15%;
+      
 }
 #intro-content p:first-child
 {
@@ -266,6 +301,7 @@ nav .menu-btn i
     color:white;
     font-weight: bold;
     text-align: left;
+    
 }
 #intro-content p:last-child
 {
@@ -291,6 +327,7 @@ nav .menu-btn i
 }
 .intro-btns
 {
+    /* border:2px solid blue; */
     padding: 7px 10px;
     color:black;
     border-radius: 3px;
@@ -315,8 +352,8 @@ nav .menu-btn i
 #intro-content
     {
         
-    margin:45% 100px 10% 95px;
-    width: 80%;
+    margin:40% 100px 10% 80px;
+    width: 70%;
     }
     #intro-content p:first-child
     {
@@ -328,7 +365,9 @@ nav .menu-btn i
     }
     #intro-btns
     {
-        margin-left: 95px;
+       /* border:2px solid black; */
+        /* margin-left: 95px; */
+        margin:0 20% 0 18%;
 
     }
     
@@ -910,14 +949,30 @@ nav .menu-btn i
                               /* *************Page -7 styling end here*************** */
 
     /* ********************************* Page - 8 styling start here ********************************** */
-                            
+          
+    
+#newsletter 
+{
+        background:url(images/Night-Bridge.jpg) no-repeat center;
+        background-size: 100% 100%;
+        overflow-x:hidden;
+        /* padding-top: 50px;
+        padding-bottom: 70px; */
+        /* background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center; */
+}    
 .bridgeContainer
 {
-    height: 55vh;
+    /* border:2px dashed blue;  */
+    height: 65vh;
     margin-bottom: 10vh;
+    overflow-x: hidden;
+   
+    
     /* overflow: hidden; */
-    background: url(images/Night-Bridge.jpg) no-repeat;
-    background-size: 100% 100%;
+    /* background: url(images/Night-Bridge.jpg) no-repeat; */
+   
 }
 
 .bridgeContainer p
@@ -932,17 +987,25 @@ nav .menu-btn i
 }    
 .newsform
 {
-       /* border:1px solid wheat; */
-    margin: 0 100px 0 0px;
-    text-align: center;
-    position: relative;
+    /* border:1px solid wheat; */
+    /* width: 40%; */
+    width: 40%;
+    margin:0 auto;
+    border-radius: 4px;
+    /* overflow-x:hidden; */
+   
+    
+    /* position: relative; */
+    
 
 }
 .newsform input
 {
     border-radius: 5px 0 0 5px;
-    padding:12px;
-    width:33.33%;
+    padding: 12px 0px 12px 15px;
+    width: 77%;
+    margin:0 auto;
+    font-size: 14px;
     -webkit-transition: 0.1s;
     transition: 0.1s;
     border: none;
@@ -954,14 +1017,15 @@ nav .menu-btn i
 {
     border:none;
     box-shadow: 0 0 3pt 2pt cornflowerblue;
-    /* border-radius: 5px 0 0 5px; */
-}    
-#newsSignupbtn
+
+}
+.newsform button
 {
     background-color: #FFC107;
     position:absolute;
-    padding: 12px;
-    width:10%;
+    padding: 12px 30px;
+    font-size: 14px;
+    /* width:10%; */
     text-transform: uppercase;
     border-radius:0px 5px 5px 0;
     -webkit-transition: 0.1s;
@@ -971,35 +1035,39 @@ nav .menu-btn i
     font-weight: 500;
     
 }
-#newsSignupbtn:focus
+.newsform button:focus
 {
     border:none;
     box-shadow: 0 0 3pt 2pt darkgoldenrod;
 
 }
-#newsSignupbtn:hover
+.newsform button:hover
 {
     background-color: #65317D;
     color:white;
 }
-@media (max-width: 880px) 
+@media (max-width:576px) 
 {
     #newsletter .newsform {
         width: 80%;
         border-radius: 4px;
+        /* overflow-x: hidden; */
     }
-    #newsletter button {
-        width: 100px;
+    .newsform button {
+        /* width: 100px; */
         border-radius: 4px;
-        margin: 60px 0px 10px -200px;
+        margin-top: 65px;
+        margin-left:-250px;
     }
     .newsform input
     {
-        width: 300px;
+        margin:0 auto;
+        width: 380px;
         border-radius:5px;
 
     }
 }
+
     
                           /* *************Page -8 styling end here*************** */
 
@@ -1115,7 +1183,8 @@ nav .menu-btn i
 }
 .cont-form :first-child
 {
-    margin:10vh 0 5vh 60px;
+    /* border:2px solid black; */
+    margin:10vh 60px 5vh 60px;
     font-size: 40px;
     font-weight: 600;
     
@@ -1277,3 +1346,51 @@ span .social:hover
 }
 
 /* **********************THE END****************************** */
+
+/* NEWSLETTER style  */
+/* 
+#newsletter {
+    background-image: url('images/Night-Bridge.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-top: 50px;
+    padding-bottom: 70px;
+}
+
+#newsletter .text-center {
+    color: #fff;
+    padding-bottom: 30px;
+}
+
+.form-group {
+    width: 40%;
+    margin: 0 auto;
+    border-radius: 4px;
+}
+
+.bt {
+    padding: 10px 30px;
+    border: none;
+    font-size: 16px;
+    border-radius: 4px;
+}
+
+.bt:hover {
+    color: #fff;
+    background-color: #723a72;
+    border: none;
+} */
+
+/* NEWSLETTER style ends here  */
+ /* NEWSLETTER */
+ /* @media (max-width: 576px) {
+ #newsletter .form-group {
+    width: 80%;
+    border-radius: 4px;
+}
+#newsletter .bt {
+    border-radius: 4px;
+    margin: 20px auto 0px;
+}
+} */
