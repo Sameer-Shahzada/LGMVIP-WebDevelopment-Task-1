@@ -15,11 +15,10 @@ body,html
 
 .slider
 {
-   
     width: 100%;
     height: 100vh;
-    overflow: hidden;
-    /* overflow-x: hidden; */
+    overflow: hidden; 
+    /* overflow-x: hidden;*/
 }
 .slides
 {
@@ -60,12 +59,22 @@ body,html
     background: url("https://source.unsplash.com/1500x800/?computer") no-repeat;
 }
 
+@media (max-width:584px) and (min-width:400px)
+{
+    body,html
+    {
+        overflow-x: hidden;
+    }
+  
+  
+}
+
    /* style for manual slide navigation */
    .navigation-manual
    {
 
        position: absolute;
-       /* width: 575px; */
+       width: 575px;
        margin-top: -40px;
        
        display: flex;
@@ -110,7 +119,7 @@ body,html
    {
        position: absolute;
        display: flex;
-       /* width: 575px; */
+       width: 575px;
        justify-content: center;
        margin-top: 537px;
    
@@ -118,7 +127,8 @@ body,html
    .navigation-auto div
    {
        /* border:2px solid white; */
-       padding: 5px;
+       
+       /* padding: 5px; */
        border-radius: 10px;
        transition:1s;
    }
@@ -149,7 +159,7 @@ body,html
 
 #navbar
 {
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
     position: fixed;    /* Make it stick/fixed */
     width: 100%;        /* Full width */
     transition: top 0.1s; /* Transition effect when sliding down (and up) */
@@ -173,7 +183,7 @@ nav
     width: 100%;
     align-items: center;         /* To set vertically center */
     min-height: 12vh;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
 }
 .navLinks
 {
@@ -212,7 +222,7 @@ nav .menu-btn i
 nav .menu-btn i:hover
 {
     border:2.5px solid black;
-    padding: 5px;
+    /* padding: 5px; */
     border-radius: 4px;
 }
 #click
@@ -225,7 +235,7 @@ nav .menu-btn i:hover
 {
     #navbar
     {
-        overflow-x: hidden;
+        /* overflow-x: hidden; */
     }
      .navLinks
     {
@@ -234,7 +244,7 @@ nav .menu-btn i:hover
         top: 52px;
         left:-100%; 
         background:#111;
-        height:70vh;
+        height:55vh;
         width: 100%;
         display: block;
         text-align: center;
@@ -262,14 +272,15 @@ nav .menu-btn i:hover
     }
     .brandName
     {
-        margin-left: -90px;
-        overflow-x: hidden; 
+        margin-left: 0px;
+        /* overflow-x: hidden;  */
         /* max-width: 100vw; */
         
     }
     nav .menu-btn i 
     {
         display: block;
+        margin-left:200px;
   
     }
     #click:checked ~ .menu-btn i::before{
@@ -277,7 +288,7 @@ nav .menu-btn i:hover
     }
     .slide
     {
-        overflow-x: hidden;
+        /* overflow-x: hidden; */
     }
 }
 
@@ -953,26 +964,17 @@ nav .menu-btn i:hover
     
 #newsletter 
 {
-        background:url(images/Night-Bridge.jpg) no-repeat center;
-        background-size: 100% 100%;
-        overflow-x:hidden;
-        /* padding-top: 50px;
-        padding-bottom: 70px; */
-        /* background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center; */
+    background:url(images/Night-Bridge.jpg) no-repeat center;
+    background-size: 100% 100%;
+    overflow-x:hidden;
+        
 }    
 .bridgeContainer
 {
     /* border:2px dashed blue;  */
     height: 65vh;
     margin-bottom: 10vh;
-    overflow-x: hidden;
-   
-    
-    /* overflow: hidden; */
-    /* background: url(images/Night-Bridge.jpg) no-repeat; */
-   
+    overflow-x: hidden;   
 }
 
 .bridgeContainer p
@@ -987,17 +989,11 @@ nav .menu-btn i:hover
 }    
 .newsform
 {
-    /* border:1px solid wheat; */
-    /* width: 40%; */
+    /* border:5px solid purple; */
+   
     width: 40%;
     margin:0 auto;
     border-radius: 4px;
-    /* overflow-x:hidden; */
-   
-    
-    /* position: relative; */
-    
-
 }
 .newsform input
 {
@@ -1025,7 +1021,6 @@ nav .menu-btn i:hover
     position:absolute;
     padding: 12px 30px;
     font-size: 14px;
-    /* width:10%; */
     text-transform: uppercase;
     border-radius:0px 5px 5px 0;
     -webkit-transition: 0.1s;
@@ -1044,14 +1039,14 @@ nav .menu-btn i:hover
 .newsform button:hover
 {
     background-color: #65317D;
-    color:white;
+    color:wheat;
 }
 @media (max-width:576px) 
 {
     #newsletter .newsform {
         width: 80%;
         border-radius: 4px;
-        /* overflow-x: hidden; */
+        
     }
     .newsform button {
         /* width: 100px; */
@@ -1346,51 +1341,3 @@ span .social:hover
 }
 
 /* **********************THE END****************************** */
-
-/* NEWSLETTER style  */
-/* 
-#newsletter {
-    background-image: url('images/Night-Bridge.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    padding-top: 50px;
-    padding-bottom: 70px;
-}
-
-#newsletter .text-center {
-    color: #fff;
-    padding-bottom: 30px;
-}
-
-.form-group {
-    width: 40%;
-    margin: 0 auto;
-    border-radius: 4px;
-}
-
-.bt {
-    padding: 10px 30px;
-    border: none;
-    font-size: 16px;
-    border-radius: 4px;
-}
-
-.bt:hover {
-    color: #fff;
-    background-color: #723a72;
-    border: none;
-} */
-
-/* NEWSLETTER style ends here  */
- /* NEWSLETTER */
- /* @media (max-width: 576px) {
- #newsletter .form-group {
-    width: 80%;
-    border-radius: 4px;
-}
-#newsletter .bt {
-    border-radius: 4px;
-    margin: 20px auto 0px;
-}
-} */

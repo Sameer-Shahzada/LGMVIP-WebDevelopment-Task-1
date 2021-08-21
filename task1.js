@@ -1,13 +1,13 @@
 
 // script for image slider
-// var counter =1;
-// setInterval(function(){
-//     document.getElementById('radio'+ counter).checked = true;
-//     counter++;
-//     if(counter>4){
-//         counter =1;
-//     }
-// },5000);
+var counter =1;
+setInterval(function(){
+    document.getElementById('radio'+ counter).checked = true;
+    counter++;
+    if(counter>4){
+        counter =1;
+    }
+},5000);
 
 
 // When the user scrolls down 20px from the top of the document, slide down the navbar
